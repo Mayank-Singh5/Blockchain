@@ -1,16 +1,16 @@
-# Simple Python Blockchain
+# MINIMAL BLOCKCHAIN IMPLEMENTATION
 
-A basic blockchain implementation demonstrating core concepts like blocks, proof-of-work mining, and chain validation.
+A very simple code based on the basics of blockchain which consists of block structure, validation logic and proof of work.
 
 ## Block Structure
 
 Each block contains:
-- `index`: Position in the chain (0 = genesis block)
+- `index`: Position in the chain
 - `timestamp`: When the block was created
 - `data`: Information stored in the block
 - `prev_hash`: Fingerprint of the previous block
 - `nonce`: Number used for mining
-- `hash`: Digital fingerprint of the current block
+- `hash`: Digital fingerprint(unique) of the current block
 
 
 ## Validation Logic
@@ -29,7 +29,6 @@ The blockchain checks:
 ## Proof-of-Work Approach
 
 The mining process:
-1. Finds a hash starting with "00" (simple difficulty)
+1. Finds a hash starting with "00" (simple difficulty given here)
 2. Keeps changing the `nonce` value until the hash meets this requirement
 3. Measures how long mining takes
-4. Example mining output:
